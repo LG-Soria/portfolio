@@ -1,5 +1,5 @@
 # Título del proyecto
-![Imagen del proyecto](https://github.com/LG-Soria/portfolio/blob/main/imagenes/repository-open-graph-template.png?raw=true)
+![Imagen del proyecto](https://github.com/LG-Soria/portfolio/blob/main/imagenes/Screenshot.png?raw=true)
 
 ## Ejemplo en vivo
 -(https://lg-soria.github.io/portfolio/)
