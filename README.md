@@ -1,5 +1,5 @@
 # Título del proyecto
-![Imagen del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/IMAGEN-DEL-PROYECTO.jpg?raw=true)
+![Imagen del proyecto](https://github.com/LG-Soria/portfolio/blob/main/imagenes/repository-open-graph-template.png?raw=true)
 
 ## Ejemplo en vivo
 -(https://lg-soria.github.io/portfolio/)
@@ -22,9 +22,9 @@ A tener paciencia e iniciar las cosas con una buena base y diseño antes de tira
 ## Autor ✒️
 Lucas Gaston Soria
 
-* [micorreo@midominio.com](lucas_s96@outlook.com)
+* [Lucas_s96@outlook.com](lucas_s96@outlook.com)
 * [LinkedIn](https://www.linkedin.com/in/lucas-soria-g/)
-* [Behance](https://www.behance.net/tu-url-de-behance)
+* [Behance](https://www.behance.net/Lucas_Soria)
 * [Porfolio web](https://lg-soria.github.io/portfolio/)
 
 ## Instalación 
