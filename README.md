@@ -2,7 +2,7 @@
 ![Imagen del proyecto](https://github.com/LG-Soria/portfolio/blob/main/imagenes/Screenshot.png?raw=true)
 
 ## Ejemplo en vivo
--(https://lg-soria.github.io/portfolio/)
+- [URL-de-github-pages-de-este-proyecto](https://lg-soria.github.io/portfolio/)
 
 ## Descripción 📑
 
