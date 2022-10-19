@@ -2,7 +2,7 @@
 
 
 //CARRUSEL DE PROYECTOS
-const carrusel = document.querySelector('.proyectosBox')
+const carrusel = document.querySelector('.proyectosBoxDos')
 
 const item = document.querySelector('.proyectoItems')
 
