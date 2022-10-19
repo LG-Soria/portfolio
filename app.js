@@ -14,14 +14,14 @@ const start = () => {
             carrusel.scrollLeft = carrusel.scrollLeft + step
 
             if(carrusel.scrollLeft === maxScarollLeft) {
-                step= step * -1;
+                step = step * -1;
             }
             else if (carrusel.scrollLeft === 0){
                 step = step * -1
             }
 
             
-        }, 15);
+        }, 8);
 }
 
 const stop = () => {
