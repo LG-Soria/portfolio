@@ -137,6 +137,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .navbarItems > li:hover{
     font-weight: 400;
+	transform: none;
   
 }
 
