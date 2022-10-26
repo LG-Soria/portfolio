@@ -54,7 +54,7 @@ a:link {
     grid-column-start: 2;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 30px;
+    column-gap: 1.875rem;
 
     background-color: transparent;
     color: #FFF;
@@ -76,7 +76,7 @@ ul{
 
 .checkbtn {
     grid-column: 1 / -1;
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #fff;
     float: right;
     cursor: pointer;
@@ -229,7 +229,7 @@ ul{
     .presentacion {
         margin: 0;
         row-gap: 0.2rem;
-        height: 400px;
+        height: 25rem;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(auto, 1fr);
 
@@ -238,7 +238,7 @@ ul{
     .presentacion>.title {
         grid-column: 1 / 13;
         position: relative;
-        left: 5px;
+        left: 0.313rem;
 
         letter-spacing: 0.2rem;
         font-size: 1.8rem;
@@ -278,11 +278,11 @@ ul{
 
 
 .sobreMi {
-    margin-top: 400px;
+    margin-top: 25rem;
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px 2fr;
+    grid-template-rows: 12.5rem 2fr;
 
 }
 
@@ -792,8 +792,8 @@ form {
     background-color: #2919dbab;
     padding: 20px;
     border-radius: 2px;
-    width: 800px;
-    height: 600px;
+    width: 50rem;
+    height: 39.5rem;
     border: 1px solid rgba(0, 0, 0, 0.199);
     box-shadow: rgba(0, 0, 0, 0.39) 0px 4px 20px;
 }
@@ -820,6 +820,7 @@ input {
 }
 
 textarea {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
     min-width: 90%;
     max-width: 90%;
     min-height: 15%;
@@ -856,6 +857,8 @@ textarea {
         grid-column: 1 / span 3;
         width: 320px;
         padding: 5px;
+        height: 30.2rem;
+
 
 
     }
@@ -921,7 +924,7 @@ footer {
 
 @media screen and (max-width: 600px) {
     footer {
-        margin-top: 200px;
+        margin-top: 4rem;
         font-size: .9rem;
         row-gap: 5px;
     }
