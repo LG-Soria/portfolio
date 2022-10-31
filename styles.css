@@ -31,6 +31,13 @@ a:link {
 
 .header {
     grid-column: 1/-1;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+    .container{
+        margin-left: 10%;
+    }
 }
 
 @media screen and (max-width: 680px) {
@@ -42,6 +49,7 @@ a:link {
 
 }
 
+
 /************** NAVBAR *********************/
 
 .navbar {
@@ -51,10 +59,9 @@ a:link {
 }
 
 .navbarItems {
+    display: flex;
+    justify-content: space-around;
     grid-column-start: 2;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 1.875rem;
 
     background-color: transparent;
     color: #FFF;
@@ -69,10 +76,9 @@ a:link {
     transform: scale(130%);
 }
 
-ul{
-    text-align: center;
-    justify-content: center;
-}
+
+
+/*Boton Menu*/
 
 .checkbtn {
     grid-column: 1 / -1;
@@ -87,6 +93,13 @@ ul{
     display: none;
 }
 
+@media screen and (max-width: 1440px) {
+    .navbarItems{
+        display: flex;
+    }
+    
+}
+
 @media screen and (max-width: 600px) {
 
     .navbarItems {
@@ -98,7 +111,7 @@ ul{
         grid-template-columns: 1fr;
         row-gap: 0.8rem;
         position: absolute;
-        padding: 4% 15%;
+        padding: 2% 20%;
         width: 100%;
         height: max-content;
         z-index: 800;
@@ -110,6 +123,7 @@ ul{
         backdrop-filter: blur(17.5px);
         -webkit-backdrop-filter: blur(17.5px);
         border: 1px solid rgba(255, 255, 255, 0.18);
+
     }
 
     .checkbtn {
@@ -132,18 +146,16 @@ ul{
 /******** Presetacion ******/
 
 .presentacion {
-    margin-top: 100px;
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-
+    margin-top: 100px;
 }
 
 .presentacion>.title {
     text-align: center;
-    grid-column: 3/ span 9;
-    grid-row: 2/ 9;
+    grid-column: 1/ 15;
+    
     font-size: 4.2rem;
     color: #fff;
     font-weight: 900;
@@ -152,7 +164,6 @@ ul{
     text-transform: uppercase;
     
     background: transparent;
-    margin-left: -150px;
 
     text-shadow: -4px 3px 0 #286dc3, -14px 7px 0 #0a0e27;
     -webkit-animation: tracking-in-expand-fwd-top 1.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -162,7 +173,6 @@ ul{
 .hola {
     position: relative;
     font-size: 3rem;
-    grid-row-start: 1;
 }
 
 /*animacion*/
@@ -206,8 +216,7 @@ ul{
 
 
 .presentacion>.subTitle {
-    grid-column: 5/ span 4;
-    grid-row-start: 9;
+    grid-column: 4/ span 6;
     text-align: center;
     grid-auto-flow: row;
 
@@ -231,12 +240,15 @@ ul{
         row-gap: 0.2rem;
         height: 25rem;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(auto, 1fr);
+        grid-template-rows: repeat(3, 1fr);
 
     }
 
     .presentacion>.title {
+        top: -40px;
         grid-column: 1 / 13;
+        grid-row-start: 2;
+
         position: relative;
         left: 0.313rem;
 
@@ -261,12 +273,14 @@ ul{
     }
 
     .presentacion>.subTitle {
+        grid-row-start: 3;
+
         position: relative;
         left: -12px;
-        top: 22px;
+        top: -36px;
+
         font-size: 1.15rem;
         grid-column: 3 / 12;
-        grid-row-start: 4;
         font-weight: 300;
 
     }
@@ -278,7 +292,7 @@ ul{
 
 
 .sobreMi {
-    margin-top: 25rem;
+    margin-top: 20rem;
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -289,7 +303,7 @@ ul{
 
 .sobreMi>.sobreMiTitle {
     grid-column: 1/-1;
-    align-self: start;
+    align-self: center;
 }
 
 
@@ -298,11 +312,13 @@ ul{
     font-weight: 700;
     background-color: #fff;
     text-align: end;
-    font-size: 2.5rem;
+    font-size: 3rem;
     width: 100%;
-    margin-left: -65%;
+    margin-left: -50%;
     padding: 5px 10px;
     text-shadow: #3104fc8c 2px 1px 2px;
+   
+
 
 
 }
@@ -318,11 +334,10 @@ ul{
     grid-template-rows: repeat(12, 1fr);
     column-gap: 100px;
     box-shadow: #000 0px 5px 15px;
-    margin-left: 90px;
 
     /*animacion*/
     max-height: 34.5rem;
-    transition: max-height 3s ease-in-out, transform 3s ease-in-out;
+    transition: max-height 3s ease-in-out, transform 2s ease-in-out;
 
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -421,6 +436,14 @@ img.hover-img {
 
 
 /*MediaQuerys*/
+
+@media screen and (max-width: 1440px) {
+    .sobreMiBox{
+        margin-left: 0;
+
+    }
+    
+}
 
 @media screen and (max-width: 600px) {
     .sobreMi {
@@ -673,7 +696,7 @@ img {
     grid-template-rows: auto;
     text-align: center;
     row-gap: 50px;
-    margin-top: 400px;
+    margin-top: 300px;
 
 }
 
@@ -691,6 +714,7 @@ img {
     grid-column: 1 / -1;
     width: max-content;
     margin: auto;
+    margin-top: 30px;
 
 
 
@@ -763,10 +787,9 @@ img {
 
 .contacto {
     grid-column: 1/ -1;
-    margin-top: 400px;
+    margin-top: 230px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
     text-align: center;
     row-gap: 30px;
 
@@ -782,6 +805,8 @@ img {
 .contacto>.formulario {
     grid-column: 2 / span 4;
     margin: auto;
+    margin-top: 30px;
+    
 }
 
 
@@ -792,7 +817,7 @@ form {
     background-color: #2919dbab;
     padding: 20px;
     border-radius: 2px;
-    width: 50rem;
+    width: 30rem;
     height: 39.5rem;
     border: 1px solid rgba(0, 0, 0, 0.199);
     box-shadow: rgba(0, 0, 0, 0.39) 0px 4px 20px;
@@ -830,9 +855,11 @@ textarea {
     padding: 10px;
 }
 
+    /*MEDIAQUERYS*/
+
 @media screen and (max-width: 600px) {
     .contacto {
-        margin-top: 200px;
+        margin-top: 100px;
         grid-column: 1/-1;
         grid-template-columns: repeat(3, 1fr);
         row-gap: 30px;
@@ -906,12 +933,14 @@ footer {
     font-weight: 400;
     color: white;
     font-size: 1.25rem;
-    margin-top: 200px;
+    margin-top: 100px;
     font-size: 0.9rem;
 
 
 }
-
+.linkFooter:hover{
+    color: #bbb;
+}
 .footerContainer {
     grid-column: 1 / 2;
 
